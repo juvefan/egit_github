@@ -20,7 +20,7 @@
 	</distributionManagement>
 
 	<scm>
-		<!-- <url>https://github.com/juvefan/egit_github</url> -->
+		<url>https://github.com/juvefan/egit_github</url>
 		<connection>scm:git:https://github.com/juvefan/egit_github.git</connection>
 		<!-- <tag>tutorial-0.0.1</tag> -->
 	</scm>
