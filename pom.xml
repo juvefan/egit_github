@@ -6,17 +6,17 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Tutorial </name>
 	<description>My first tutorial</description>
-	<url>https://github.com/juvefan/egit_github</url>
+	<!-- <url>https://github.com/juvefan/egit_github</url> -->
 
 	<distributionManagement>
 		<repository>
 			<id>juvefan-release</id>
 			<url>ftp://localhost/release</url>
 		</repository>
-		<snapshotRepository>
+		<!-- <snapshotRepository>
 			<id>juvefan-snapshot</id>
 			<url>ftp://localhost/snapshot</url>
-		</snapshotRepository>
+		</snapshotRepository> -->
 	</distributionManagement>
 
 	<scm>
@@ -69,6 +69,11 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-release-plugin</artifactId>
 				<version>2.5.3</version>
+				<configuration>
+					<checkModificationExcludes>
+						<checkModificationExclude>target</checkModificationExclude>
+					</checkModificationExcludes>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
