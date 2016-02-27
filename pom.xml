@@ -13,10 +13,10 @@
 			<id>juvefan-release</id>
 			<url>ftp://localhost/release</url>
 		</repository>
-		<!-- <snapshotRepository>
+		<snapshotRepository>
 			<id>juvefan-snapshot</id>
 			<url>ftp://localhost/snapshot</url>
-		</snapshotRepository> -->
+		</snapshotRepository>
 	</distributionManagement>
 
 	<scm>
