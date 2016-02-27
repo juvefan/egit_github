@@ -6,7 +6,7 @@
 	<version>0.0.1</version>
 	<name>Tutorial </name>
 	<description>My first tutorial</description>
-	<!-- <url>https://github.com/juvefan/egit_github</url> -->
+	<url>https://github.com/juvefan/egit_github</url>
 
 	<distributionManagement>
 		<repository>
@@ -20,8 +20,9 @@
 	</distributionManagement>
 
 	<scm>
-		<url>https://github.com/juvefan/egit_github</url>
+		<url>https://github.com/juvefan/egit_github.git</url>
 		<connection>scm:git:https://github.com/juvefan/egit_github.git</connection>
+		<developerConnection>scm:git:https://github.com/juvefan/egit_github.git</developerConnection>
 		<!-- <tag>tutorial-0.0.1</tag> -->
 	</scm>
 
@@ -67,12 +68,14 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-release-plugin</artifactId>
 				<version>2.5.3</version>
-				<!-- <configuration>
-					<tagNameFormat>v@{project.version}</tagNameFormat>
+				<configuration>
+				<releaseProfiles>release</releaseProfiles>
+				
+				<!-- 	<tagNameFormat>v@{project.version}</tagNameFormat>
 					<checkModificationExcludes>
 						<checkModificationExclude>target</checkModificationExclude>
-					</checkModificationExcludes>
-				</configuration> -->
+					</checkModificationExcludes> -->
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
