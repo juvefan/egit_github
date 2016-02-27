@@ -9,17 +9,18 @@
 	<url>https://github.com/juvefan/egit_github</url>
 
 	<distributionManagement>
-	<repository>
-	
-	</repository>
+		<repository>
+			<id>juvefan-release</id>
+			<url>ftp://localhost/release</url>
+		</repository>
 		<snapshotRepository>
 			<id>juvefan-snapshot</id>
-			<url>https://github.com/juvefan/egit_github</url>
+			<url>ftp://localhost/snapshot</url>
 		</snapshotRepository>
 	</distributionManagement>
 
 	<scm>
-		<url>https://github.com/juvefan/egit_github</url>
+		<!-- <url>https://github.com/juvefan/egit_github</url> -->
 		<connection>scm:git:https://github.com/juvefan/egit_github.git</connection>
 	</scm>
 
